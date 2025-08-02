@@ -30,12 +30,13 @@
       justify-content: center;
       position: relative;
       z-index: 2;
-      padding-bottom: 40px;
+      text-align: center;
+      padding: 20px;
     }
 
     h1 {
       font-size: 28px;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
 
     .menu-container {
@@ -43,7 +44,6 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
-      z-index: 2;
     }
 
     .menu-button {
@@ -95,27 +95,30 @@
 </head>
 <body>
   <img src="logo_proveedora.png" alt="Logo La Proveedora" class="marca-agua">
-  <h1>Menú Principal - Facturacion (Egreso-Ingreso)</h1>
-  <div class="menu-container">
-     <button class="menu-button" onclick="window.location.href='https://licaptio.github.io/MENUADMONPROTEC25/DEUDAV2.0/DONMORRISDEUDA.html'">
-      Visor Facturas Proveedora
-    </button>
-    <button class="menu-button" onclick="window.location.href='https://licaptio.github.io/MENUADMONPROTEC25/DEUDAV2.0/CARGAXML.html'">
-      Carga Facturas Proveedora
-    </button>
+
+  <div class="contenido">
+    <h1>Menú Principal - Facturación (Egreso-Ingreso)</h1>
+
+    <div class="menu-container">
+      <button class="menu-button" onclick="window.location.href='https://licaptio.github.io/MENUADMONPROTEC25/DEUDAV2.0/DONMORRISDEUDA.html'">
+        Visor Facturas Proveedora
+      </button>
+      <button class="menu-button" onclick="window.location.href='https://licaptio.github.io/MENUADMONPROTEC25/DEUDAV2.0/CARGAXML.html'">
+        Carga Facturas Proveedora
+      </button>
+    </div>
   </div>
-    <footer>
-    © 2025 <span>Menu Monitoreo Almacen PDD</span> · Desarrollado por Lizandro Sustaita
+
+  <footer>
+    © 2025 <span>Menu Recepcion Facturas PDD</span> · Desarrollado por Lizandro Sustaita
   </footer>
+
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('service-worker.js')
         .then(() => console.log('Service Worker registrado'))
         .catch(error => console.log('Error al registrar el Service Worker:', error));
     }
-  </script>
-</body>
-</html>
   </script>
 </body>
 </html>
